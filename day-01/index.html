@@ -1,0 +1,36 @@
+<!-- Day 1 UI by @uiwithdhruv -->
+<button class="btn">Click Me</button>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #0f0f1a;
+}
+.btn {
+  position: relative;
+  padding: 16px 40px;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(45deg,
+    #ff0080, #7928ca, #00d4ff);
+  background-size: 200% 200%;
+  animation: move 3s infinite;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: blur(20px);
+  z-index: -1;
+}
+.btn:hover { transform: scale(1.1); }
+@keyframes move {
+  50% { background-position: 100% 50%; }
+}
+</style>
