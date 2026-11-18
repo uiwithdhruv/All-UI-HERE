@@ -10,5 +10,6 @@ Instagram: @uiwithdhruv
 | Day | UI | Code |
 |---|---|---|
 | 01 | Glowing Gradient Button | [day-01](day-01) |
+| 2 | Hover Card | [day-02](day-02) |
 
 Kaam pasand aaye to repo ko star karo.
