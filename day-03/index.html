@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 3 - Glass Login Form</title>
+  <style>
+    /* Day 3 UI by @uiwithdhruv */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #0f0f1a;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Peeche ka rangeen circle: isi ki wajah se glass effect dikhta hai */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 28%;
+      left: 18%;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: #ff0080;
+      animation: float 4s infinite alternate;
+    }
+
+    .box {
+      position: relative;
+      width: 280px;
+      padding: 32px;
+      border-radius: 20px;
+      background: #ffffff30;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 1px solid #ffffff50;
+      text-align: center;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 14px;
+      border: none;
+      border-radius: 10px;
+      box-sizing: border-box;
+      background: #ffffff40;
+    }
+
+    input {
+      color: #fff;
+      outline: none;
+    }
+
+    input::placeholder {
+      color: #ddd;
+    }
+
+    button {
+      background: #fff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.04);
+    }
+
+    @keyframes float {
+      to { transform: translateY(60px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Login</h2>
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button>Sign In</button>
+  </div>
+</body>
+</html>
